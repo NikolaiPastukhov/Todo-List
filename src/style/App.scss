@@ -1,0 +1,73 @@
+.App {
+  margin: 0;
+}
+.Wrapper {
+  width: 60%;
+  margin: 30px auto;
+  & .InputTask {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & input {
+      height: 30px;
+      outline-style: none;
+      margin-right: 15px;
+      width: 80%;
+    }
+    & button {
+      border: none {
+        radius: 5px;
+      }
+      background-color: rgba(23, 115, 201);
+      color: white;
+      cursor: pointer;
+      height: 30px;
+      &:hover {
+        background-color: rgb(23, 115, 201, 0.8);
+      }
+    }
+  }
+}
+.TasksList {
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 0;
+  &-Task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+
+    & input {
+      width: 30px;
+      height: 30px;
+      &:checked + span {
+        text-decoration: line-through;
+      }
+    }
+
+    & input + span {
+      padding-left: 10px;
+      font-size: 20px;
+      width: 100%;
+      border: 1px solid gray {
+        radius: 5px;
+      }
+    }
+    & button {
+      margin-left: 4px;
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      border: 1px solid gray {
+        radius: 5px;
+      }
+      color: red;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+}
