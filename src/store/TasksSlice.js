@@ -24,7 +24,7 @@ const TaskSlice = createSlice({
         deleteTask(state, action) { 
             state.tasks = state.tasks.filter(task => task.id !== action.payload.id );
         },
-    }
+    },
 });
 
 export const {addTask, checkedTaskComplete, deleteTask} =  TaskSlice.actions;
